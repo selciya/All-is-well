@@ -1,0 +1,65 @@
+#include <conio.h>
+#include<stdio.h>
+
+
+struct Node { 
+	string c; 
+	struct Node* next; 
+}; 
+
+ 
+
+struct Node* newNode(string c) 
+{ 
+	Node* temp = new Node; 
+	temp->c = c; 
+	temp->next = NULL; 
+	return temp; 
+}; 
+
+
+void reverse_word(string& str) 
+{ 
+	reverse(str.begin(), str.end()); 
+} 
+
+ reverse(struct Node* head) 
+{ 
+	struct Node* ptr = head; 
+
+
+	while (ptr != NULL) { 
+		reverse_word(ptr->c); 
+		ptr = ptr->next; 
+	} 
+} 
+
+ printList(struct Node* head) 
+{ 
+	while (head != NULL) { 
+		cout << head->c << " "; 
+		head = head->next; 
+	} 
+} 
+
+
+int main() 
+{ 
+printf("enter your string");
+scanf("%c",i);
+chr=String;
+	Node* head = newNode("String"); 
+	
+
+
+	printf("List before reverse"); 
+	printList(head); 
+
+	reverse(head); 
+
+
+	 printf("List after reverse");
+	printList(head); 
+
+	return 0; 
+}
